@@ -1,0 +1,162 @@
+/*#region ---  --- */
+* {
+  border: 1px solid red;
+}
+
+/* endregion ---  --- */
+
+.root {
+  margin: 0 auto;
+  padding-top: 28px;
+  box-sizing: border-box;
+  background-color: #2a2c2f;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+}
+
+@media screen and (min-width: 801px),
+(max-width: 1980px) {
+  .root {
+    margin: 0 48px;
+  }
+
+  /*#region ---Блок Header--- */
+  .header {
+    width: 100%;
+    height: 52px;
+    /* margin-top: 28px; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  .header__logo {
+    width: 176px;
+    object-fit: cover;
+  }
+
+  .header__lang-link {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .header__lang-link:first-of-type {
+    text-decoration: underline;
+    margin-right: 18px;
+  }
+
+  /*#endregion   ---Конец блока Header---*/
+
+  .contaner {
+    padding-top: 56px;
+  }
+
+  /*#region --- Секция Lead --- */
+  .lead {
+    width: 100%;
+    min-height: calc(100vh - 52px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .lead__title {
+    margin: 0 auto 32px;
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 100px;
+    max-width: min-content;
+    text-align: center;
+  }
+
+  .lead__subtitle {
+    margin: 0 auto 64px;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+  }
+
+  .lead__image {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+  }
+  .lead__image-map {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+  }
+  .lead__caption {
+    width: 100%;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  /*#endregion --- Конец секции Lead --- */
+  /*#region --- Секция Intro - Почему надо совершить эту поездку --- */
+  .intro {}
+
+  .intro__title {}
+
+  .intro__text {}
+
+  .intro__list {}
+
+  .intro__list-item {}
+
+  /*#endregion --- Конец секции Intro --- */
+  /*#region --- Секция Photo-grid  -  Красивые места - фото --- */
+  .photo-grid {}
+
+  .photo-grid__item {}
+
+  /*#endregion --- Конец секции Photo-grid --- */
+  /*#region --- Секция Places - Фотографии и описание некоторых красивых мест --- */
+  .places {}
+
+  .place {}
+
+  .place__title {}
+
+  .place__image {}
+
+  .place__website {}
+
+  .place__url-heading {}
+
+  .place__link {}
+
+  .place__paragraph {}
+
+  /*#endregion --- Конец секции Places --- */
+  /*#region --- Секция Cover - Ссытка на travel blog по мотивам "До Байкала на собаках" --- */
+  .cover {}
+
+  .cover__title {}
+
+  .cover__subtitle {}
+
+  .cover__background {}
+
+  .overlay {}
+
+  /*#endregion --- Конец секции Cover --- */
+  /*#region --- Секция Footer --- */
+  .footer {}
+
+  .footer__links {}
+
+  .footer__link {}
+
+  .footer__copyright {}
+
+  /*#endregion --- Конец секции Cover --- */}
