@@ -20,143 +20,179 @@
   -moz-text-size-adjust: 100%;
 }
 
-@media screen and (min-width: 801px),
-(max-width: 1980px) {
+@media screen and (min-width: 800px),
+(max-width: 1920px) {
   .root {
     margin: 0 48px;
   }
+}
 
-  /*#region ---Блок Header--- */
-  .header {
-    width: 100%;
-    height: 52px;
-    /* margin-top: 28px; */
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-  }
+/*#region ---Блок Header--- */
+.header {
+  width: 100%;
+  height: 52px;
+  /* margin-top: 28px; */
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
 
-  .header__logo {
-    width: 176px;
-    object-fit: cover;
-  }
+.header__logo {
+  width: 176px;
+  object-fit: cover;
+}
 
-  .header__lang-link {
-    font-size: 24px;
-    line-height: 28px;
-  }
+.header__lang-link {
+  font-size: 24px;
+  line-height: 28px;
+}
 
-  .header__lang-link:first-of-type {
-    text-decoration: underline;
-    margin-right: 18px;
-  }
+.header__lang-link:first-of-type {
+  text-decoration: underline;
+  margin-right: 18px;
+}
 
-  /*#endregion   ---Конец блока Header---*/
+/*#endregion   ---Конец блока Header---*/
 
-  .contaner {
-    padding-top: 56px;
-  }
+.contaner {
+  margin: 0 auto;
+  padding-top: 56px;
+  /* Для десктопов от 800px до 1920px, остальное через @media */
+  width: calc(984px - (1280px - 100vw)*0.21875)
+}
 
-  /*#region --- Секция Lead --- */
-  .lead {
-    width: 100%;
-    min-height: calc(100vh - 52px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+/*#region --- Секция Lead --- */
+.lead {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  .lead__title {
-    margin: 0 auto 32px;
-    font-weight: 900;
-    font-size: 96px;
-    line-height: 100px;
-    max-width: min-content;
-    text-align: center;
-  }
+.lead__title {
+  margin: 0 auto 32px;
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 100px;
+  max-width: min-content;
+  text-align: center;
+}
 
-  .lead__subtitle {
-    margin: 0 auto 64px;
-    font-size: 30px;
-    line-height: 36px;
-    text-align: center;
-  }
+.lead__subtitle {
+  margin: 0 auto 64px;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+}
 
-  .lead__image {
-    position: relative;
-    width: 100%;
-    height: fit-content;
-  }
-  .lead__image-map {
-    width: 100%;
-    height: 100%;
-    background-size: contain;
-  }
-  .lead__caption {
-    width: 100%;
-    background-size: cover;
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
+.lead__image {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+}
 
-  /*#endregion --- Конец секции Lead --- */
-  /*#region --- Секция Intro - Почему надо совершить эту поездку --- */
-  .intro {}
+.lead__image-sleep {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center top;
+  object-position: center top;
+  margin-bottom: 8px;
+}
 
-  .intro__title {}
+.lead__image-map {
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  transform: translate(-50%, 0);
+  width: 90%;
+}
 
-  .intro__text {}
+.lead__caption {
+  margin: 0;
+  font-size: 10px;
+  line-height: 1.4;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
 
-  .intro__list {}
+/*#endregion --- Конец секции Lead --- */
+/*#region --- Секция Intro - Почему надо совершить эту поездку --- */
+.intro {
+  padding: 92px 0;
+  width: 690px;
+}
 
-  .intro__list-item {}
+.intro__title {
+  font-weight: 900;
+font-size: 54px;
+line-height: 1.07;
+margin-bottom: 40px;
+}
 
-  /*#endregion --- Конец секции Intro --- */
-  /*#region --- Секция Photo-grid  -  Красивые места - фото --- */
-  .photo-grid {}
+.intro__text {font-weight: 400;
+  font-size: 16px;
+  line-height: 1.63;
+  margin-bottom: 33px;
+}
 
-  .photo-grid__item {}
+.intro__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+font-size: 12px;
+line-height: 1.5;
+}
 
-  /*#endregion --- Конец секции Photo-grid --- */
-  /*#region --- Секция Places - Фотографии и описание некоторых красивых мест --- */
-  .places {}
+.intro__list-item {}
 
-  .place {}
+/*#endregion --- Конец секции Intro --- */
+/*#region --- Секция Photo-grid  -  Красивые места - фото --- */
+.photo-grid {}
 
-  .place__title {}
+.photo-grid__item {}
 
-  .place__image {}
+/*#endregion --- Конец секции Photo-grid --- */
+/*#region --- Секция Places - Фотографии и описание некоторых красивых мест --- */
+.places {}
 
-  .place__website {}
+.place {}
 
-  .place__url-heading {}
+.place__title {}
 
-  .place__link {}
+.place__image {}
 
-  .place__paragraph {}
+.place__website {}
 
-  /*#endregion --- Конец секции Places --- */
-  /*#region --- Секция Cover - Ссытка на travel blog по мотивам "До Байкала на собаках" --- */
-  .cover {}
+.place__url-heading {}
 
-  .cover__title {}
+.place__link {}
 
-  .cover__subtitle {}
+.place__paragraph {}
 
-  .cover__background {}
+/*#endregion --- Конец секции Places --- */
+/*#region --- Секция Cover - Ссытка на travel blog по мотивам "До Байкала на собаках" --- */
+.cover {}
 
-  .overlay {}
+.cover__title {}
 
-  /*#endregion --- Конец секции Cover --- */
-  /*#region --- Секция Footer --- */
-  .footer {}
+.cover__subtitle {}
 
-  .footer__links {}
+.cover__background {}
 
-  .footer__link {}
+.overlay {}
 
-  .footer__copyright {}
+/*#endregion --- Конец секции Cover --- */
+/*#region --- Секция Footer --- */
+.footer {}
 
-  /*#endregion --- Конец секции Cover --- */}
+.footer__links {}
+
+.footer__link {}
+
+.footer__copyright {}
+
+/*#endregion --- Конец секции Cover --- */
