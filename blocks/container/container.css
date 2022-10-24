@@ -1,0 +1,17 @@
+.container {
+  padding-top: 56px;
+  display: grid;
+  row-gap: 92px;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    row-gap: 88px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .container {
+    row-gap: 64px;
+  }
+}
