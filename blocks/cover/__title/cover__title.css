@@ -7,11 +7,17 @@
   margin: 0 0 32px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 560px) {
   .cover__title {
-    font-size: 32px;
+    font-size: 40px;
     line-height: 1.09;
     max-width: 288px;
     margin: 0 0 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cover__title {
+    font-size: 32px;
   }
 }
