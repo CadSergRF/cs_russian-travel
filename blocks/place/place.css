@@ -2,9 +2,9 @@
   width: 100%;
   display: grid;
   gap: 48px 40px;
-  grid-template-areas: 
-  "place-title place-website"
-  "place-image place-paragraph";
+  grid-template-areas:
+    "place-title place-website"
+    "place-image place-paragraph";
 }
 
 @media screen and (max-width: 1024px) {
@@ -19,7 +19,7 @@
   }
 }
 
-@media screen and (max-width: 725px) {
+@media screen and (max-width: 730px) {
   .place {
     display: flex;
     flex-direction: column;

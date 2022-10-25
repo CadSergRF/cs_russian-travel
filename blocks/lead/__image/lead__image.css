@@ -1,5 +1,5 @@
 .lead__image {
-  width: calc(100vw - 2*148px);
+  width: calc(100% - 2*148px);
   margin: 0 auto;
   background-size: contain;
   position: relative;
@@ -7,21 +7,12 @@
 
 @media screen and (max-width: 1024px) {
   .lead__image {
-    width: calc(100vw - 2*48px);
+    width: calc(100% - 2*48px);
   }
 }
 
 @media screen and (max-width: 800px) {
   .lead__image {
-    width: 100vw;
-  }
-}
-
-@media screen and (max-width: 414px) {
-  .lead__image {
-    width: 100vw;
-    margin: 0 auto;
-    background-size: contain;
-    position: relative;
+    width: 100%;
   }
 }

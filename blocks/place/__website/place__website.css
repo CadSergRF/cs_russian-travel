@@ -3,7 +3,7 @@
   grid-area: place-website;
 }
 
-@media screen and (max-width: 725px) {
+@media screen and (max-width: 730px) {
   .place__website {
     align-self: flex-start;
     padding-left: 16px;

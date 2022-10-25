@@ -1,13 +1,21 @@
 .root {
-  max-width: 1280px;
-  min-width: 320px;
+  outline: 1px solid red;
+  /* Ограничиваем ширину страницы  */
+  max-width: 1920px;
+  min-width: 300px;
+  /* Выравниваем по центру для больших мониторов */
   margin: 0 auto;
   box-sizing: border-box;
+  /* Задаем общие отступы */
   padding: 28px 0 24px;
+  /* Общий фон страницы */
   background-color: #2a2c2f;
-  font-family: 'Inter', 'Arial', sans-serif;
+  /* Т.к. на всей странице используется только один шрифт
+  задаем его как общий */
+  font-family: 'Inter', Arial, sans-serif;
   font-style: normal;
   color: #fff;
+  /* Сглаживаем шрифт */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
@@ -15,18 +23,14 @@
   -moz-text-size-adjust: 100%;
 }
 
-@media screen and (max-width: 1024px) {
-  
-}
-
 @media screen and (max-width: 800px) {
   .root {
-    padding: 28px 0 24px;
+    padding-bottom: 24px;
   }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 480px) {
   .root {
-    padding: 16px 0 24px;
+    padding-top: 16px;
   }
 }

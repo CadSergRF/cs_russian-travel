@@ -6,14 +6,22 @@
   grid-auto-flow: dense;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   .photo-grid {
-    margin: 0 24px;
+    gap: 14px;
   }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 800px) {
+  .photo-grid {
+    margin: 0 24px;
+    gap: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
   .photo-grid {
     margin: 0 16px;
+    gap: 12px;
   }
 }

@@ -1,5 +1,5 @@
 .places {
-  width: calc(100vw - 2*148px);
+  width: calc(100% - 2*148px);
   display: flex;
   flex-direction: column;
   gap: 80px;
@@ -8,20 +8,20 @@
 
 @media screen and (max-width: 1024px) {
   .places {
-    width: calc(100vw - 2*48px);
+    width: calc(100% - 2*48px);
   }
 }
 
 @media screen and (max-width: 800px) {
   .places {
-    width: calc(100vw - 2*24px);
+    width: calc(100% - 2*24px);
     gap: 73px;
   }
 }
 
-@media screen and (max-width: 725px) {
+@media screen and (max-width: 730px) {
   .places {
-    width: 100vw;
+    width: 100%;
     gap: 50px;
   }
 }

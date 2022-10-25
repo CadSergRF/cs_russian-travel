@@ -1,17 +1,20 @@
 .container {
   padding-top: 56px;
+  padding-bottom: 92px;
   display: grid;
   row-gap: 92px;
 }
 
 @media screen and (max-width: 800px) {
   .container {
+    padding-bottom: 88px;
     row-gap: 88px;
   }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 480px) {
   .container {
+    padding-bottom: 64px;
     row-gap: 64px;
   }
 }
